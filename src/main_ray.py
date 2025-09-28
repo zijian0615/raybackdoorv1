@@ -36,7 +36,7 @@ class PoisonedReconActorCPU:
 
     def run_pipeline(self, test_subset_indices, dataset_root="/home/ray/raybackdoorv1/data",
                      target_label=0, trigger_size=3,
-                     gradcam_layer='layer3', gradcam_threshold=0.8, batch_size=8):
+                     gradcam_layer='layer3', gradcam_threshold=0.8, batch_size=2):
 
         # transform
         transform = transforms.Compose([
