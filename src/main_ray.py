@@ -75,7 +75,7 @@ transform = transforms.Compose([
                          std=[0.247, 0.243, 0.261])
 ])
 full_testset = torchvision.datasets.CIFAR10(root="/home/ray/raybackdoorv1/data", train=False, download=True, transform=transform)
-num_actors = 6  # 你希望创建的 Actor 数量
+num_actors = 2  # 你希望创建的 Actor 数量
 dataset_len = len(full_testset)
 chunk_size = dataset_len // num_actors
 
