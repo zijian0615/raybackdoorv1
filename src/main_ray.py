@@ -87,7 +87,7 @@ subsets_indices = [
 
 # 初始化 Actor
 actors = [
-    PoisonedReconActorCPU.options(num_cpus=1, memory=0.8*1024*1024*1024).remote(
+    PoisonedReconActorCPU.options(num_cpus=1, memory=1.5*1024*1024*1024).remote(
         model_ckpt=MODEL_CKPT,
         vae_ckpt=VAE_CKPT,
         latent_dim=1024,
